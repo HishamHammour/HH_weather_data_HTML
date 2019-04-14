@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Weather API</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    
+</head>
+<body>
+        <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand"href="index.html">Weather API</a>
+                  </div>
+
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="temp.html">Temperature Vs. Latitude</a></li>
+                          <li><a href="humidity.html">Humidity Vs. Latitude</a></li>
+                          <li><a href="clouds.html">Cloudiness Vs. Latitude</a></li>
+                          <li><a href="wind.html">Wind Speed Vs. Latitude</a></li>
+
+                        </ul>
+                      </li>
+                      <li><a href="comparison.html">Comparison <span class="sr-only">(current)</span></a></li>
+                      <li><a href="data.html">Data</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-left">
+                    </form>
+                  </div>
+                </div>
+              </nav>
+
+    <div class="container">
+      <section class="row">
+        <div class = "col-md-8">
+          <div class = "Intro">
+            <h1 class="intro-header">HH Weather API</h1>
+            <hr>
+            <img class="landingImage" src="Max_Temp_vs_Latitude.png" alt="TempVLat">
+            <p>The purpose of this webpage to showcase the visualization part of analyzing weather changes as you get closer to the equator.</p>
+            <p>To accomplish this analysis, we first pulled the data from OpenWeatherMap API to assemble a dataset on over 500 cities. </p>
+            <p>We used Matplotlib to Plot various aspects of the weather vs latitude, factoring temperature, cloudiness, wind speed, and humidity. This site provide the source data and visualizations created as part of the analysis. </p>
+
+          </div>
+        </div>
+        <div class = "col-md-4">
+          <section>
+          <div class = "Examples">
+            <h1 class="exampleHeader">Visualization</h1>
+            <hr>
+            <div class = "Plots">
+              
+              <a href="temp.html"> <img src="Max_Temp_vs_Latitude.png" alt="TempVLat" class="landingPhotos"></a>
+              <a href= "clouds.html"> <img src="Cloudiness_vs_Latitude.png" alt="CloudVLat" class="landingPhotos"></a>
+              <a href="humidity.html"> <img src="Humidity_vs_Latitude.png" alt="HumidityVLat" class="landingPhotos"></a>
+              <a href="wind.html"><img src="Wind_Speed_vs_Latitude.png" alt="WindVLat" class="landingPhotos"></a>
+            </div>
+          </div>
+          </section>
+        </div>
+        </section>
+      </div>
+      <footer class="footer navbar-fixed-bottom">
+          <p class="text-muted text-center">&copy; Copyright H Hammour UT Data Analytics and Visualization BootCamp</p>
+        </footer>
+</body>
+
+
+</html>
